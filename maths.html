@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>! CLICK & CHECK !</title>
+	<style type="text/css">
+		td
+		{
+			width: 400px;
+   	 		border: 1px groove;
+   	 		text-align: center;
+		}
+		h2
+		{
+			background-color: #6DA6A5;
+			color: #330B61;
+		}
+		p
+		{
+			background-color: #E6BBBB;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+function composite()
+  {
+  	n=Number(document.getElementById("id64").value);
+    c=0;
+    for(i=1;i<=n;i++)
+    {
+      if(n%i==0)
+        c++;
+    }
+    if(c!=2)
+     document.getElementById("id65").innerHTML="Composite"; 
+    else
+     document.getElementById("id65").innerHTML="Not composite";  
+  }
+function prime()
+  {
+  	n=Number(document.getElementById("id62").value);
+    c=0;
+    for(i=1;i<=n;i++)
+    {
+      if(n%i==0)
+        c++;
+    }
+    if(c==2)
+     document.getElementById("id63").innerHTML="Prime"; 
+    else
+     document.getElementById("id63").innerHTML="Not prime";  
+  }
+  function armstrong()
+  {
+  	n=Number(document.getElementById("id58").value);
+    s=0,t=n;
+    while(n>0)
+      {
+        r=parseInt(n%10);
+        s=s+(r*r*r);
+        n=parseInt(n/10);
+      }
+      if(s==t)
+        document.getElementById("id61").innerHTML="Armstrong number";
+      else
+        document.getElementById("id61").innerHTML="Not Armstrong number";
+  }
+  function palindrome()
+  {
+  	 c=Number(document.getElementById("id58").value);
+       t=c;
+       s=0;
+       while(c>0)
+       {
+        r=parseInt(c%10);
+        s=s*10+r;
+        c=parseInt(c/10);
+       }
+       if(s==t)
+        document.getElementById("id59").innerHTML="Palindrome";
+       else
+        document.getElementById("id59").innerHTML=" Not Palindrome";
+  }
+		function negzeropos()
+		{
+			a=Number(document.getElementById("id1").value);
+			if(a<0)
+				document.getElementById("id2").innerHTML="Negative no.";
+			else if(a>0)
+				document.getElementById("id2").innerHTML="Positive no.";
+			else
+				document.getElementById("id2").innerHTML="It is Zero";
+		}
+		function abs()
+		{
+			n=Number(document.getElementById("id3").value);
+			document.getElementById("id4").innerHTML=Math.abs(n);
+		}
+		function sqrt()
+		{
+			n=Number(document.getElementById("id5").value);
+			document.getElementById("id6").innerHTML=Math.sqrt(n);
+		}
+		function cbrt()
+		{
+			n=Number(document.getElementById("id7").value);
+			document.getElementById("id8").innerHTML=Math.cbrt(n);
+		}
+		function ceil()
+		{
+			n=Number(document.getElementById("id9").value);
+			document.getElementById("id10").innerHTML=Math.ceil(n);
+		}
+		function round()
+		{
+			n=Number(document.getElementById("id11").value);
+			document.getElementById("id12").innerHTML=Math.round(n);
+		}
+		function floor()
+		{
+			n=Number(document.getElementById("id13").value);
+			document.getElementById("id14").innerHTML=Math.floor(n);
+		}
+		function exp()
+		{
+			n=Number(document.getElementById("id15").value);
+			document.getElementById("id16").innerHTML=Math.exp(n);
+		}
+		function log()
+		{
+			n=Number(document.getElementById("id17").value);
+			document.getElementById("id18").innerHTML=Math.log(n);
+		}
+		function pow()
+		{
+			x=Number(document.getElementById("id19").value);
+			y=Number(document.getElementById("id20").value);
+			document.getElementById("id21").innerHTML=Math.pow(x,y);
+		}
+		function acos()
+		{
+			n=Number(document.getElementById("id22").value);
+			document.getElementById("id23").innerHTML=Math.acos(n);
+		}
+		function acosh()
+		{
+			n=Number(document.getElementById("id24").value);
+			document.getElementById("id25").innerHTML=Math.acosh(n);
+		}
+		function cos()
+		{
+			n=Number(document.getElementById("id26").value);
+			document.getElementById("id27").innerHTML=Math.cos(n*Math.PI/180);
+		}
+		function cosh()
+		{
+			n=Number(document.getElementById("id28").value);
+			document.getElementById("id29").innerHTML=Math.cosh(n);
+		}
+		function asin()
+		{
+			n=Number(document.getElementById("id30").value);
+			document.getElementById("id31").innerHTML=Math.asin(n);
+		}
+		function asinh()
+		{
+			n=Number(document.getElementById("id32").value);
+			document.getElementById("id33").innerHTML=Math.asinh(n);
+		}
+		function sin()
+		{
+			n=Number(document.getElementById("id34").value);
+			document.getElementById("id35").innerHTML=Math.sin(n*Math.PI/180);
+		}
+		function sinh()
+		{
+			n=Number(document.getElementById("id36").value);
+			document.getElementById("id37").innerHTML=Math.sinh(n);
+		}
+		function atan()
+		{
+			n=Number(document.getElementById("id38").value);
+			document.getElementById("id39").innerHTML=Math.atan(n);
+		}
+		function atanh()
+		{
+			n=Number(document.getElementById("id40").value);
+			document.getElementById("id41").innerHTML=Math.atanh(n);
+		}
+		function tan()
+		{
+			n=Number(document.getElementById("id42").value);
+			document.getElementById("id43").innerHTML=Math.tan(n);
+		}
+		function atan2()
+		{
+			n=Number(document.getElementById("id44").value);
+			m=Number(document.getElementById("id45").value);
+			document.getElementById("id46").innerHTML=Math.atan2(n,m);
+		}
+		function trunc()
+		{
+			n=Number(document.getElementById("id47").value);
+			document.getElementById("id48").innerHTML=Math.trunc(n);
+		}
+		function random()
+		{
+			document.getElementById("id49").innerHTML = Math.random();
+		}
+		function SQRT1_2()
+		{
+			document.getElementById("id50").innerHTML=Math.SQRT1_2;
+		}
+		function SQRT2()
+		{
+			document.getElementById("id51").innerHTML=Math.SQRT2;
+		}
+		function LOG2E()
+		{
+			document.getElementById("id52").innerHTML=Math.LOG2E;
+		}
+		function LOG10E()
+		{
+			document.getElementById("id53").innerHTML=Math.LOG10E;
+		}
+		function LN2()
+		{
+			document.getElementById("id54").innerHTML=Math.LN2;
+		}
+		function LN10()
+		{
+			document.getElementById("id55").innerHTML=Math.LN10;
+		}
+		function E() 
+		{
+  			document.getElementById("id56").innerHTML = Math.E;
+		}
+		function PI() 
+		{
+  			document.getElementById("id57").innerHTML = Math.PI;
+		}
+	</script>
+	<h1><marquee bgcolor=#E7B0DC  style="width: 1500px; color: black">Check</marquee></h1>
+	<center>
+	<table  style="border: 4px solid; border-color: #513379">
+		<tr>
+		<td><h2>Check the number is Negative, Zero or Positive</h2>
+		<p><br><input id="id1" size="10"><br><br>
+		<button onclick="negzeropos()">CHECK</button><br><br></p>
+		<h2 id="id2"></h2></td>
+		<td><h2>Absolute Value</h2>
+		<p><br><input id="id3" size="10"><br><br>
+		<button onclick="abs()">CHECK</button><br><br></p>
+		<h2 id="id4"></h2></td>
+		<td><h2>SquareRoot Value</h2>
+		<p><br><input id="id5" size="10"><br><br>
+		<button onclick="sqrt()">CHECK</button><br><br></p>
+		<h2 id="id6"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>CubeRoot Value</h2>
+		<p><br><input id="id7" size="10"><br><br>
+		<button onclick="cbrt()">CHECK</button><br><br></p>
+		<h2 id="id8"></h2></td>
+		<td><h2>Ceil Value</h2>
+		<p><br><input id="id9" size="10"><br><br>
+		<button onclick="ceil()">CHECK</button><br><br></p>
+		<h2 id="id10"></h2></td>
+		<td><h2>Log Value</h2>
+		<p><br><input id="id17" size="10"><br><br>
+		<button onclick="log()">CHECK</button><br><br></p>
+		<h2 id="id18"></h2></td>
+		</tr>
+		
+		<tr>
+		<td><h2>Floor Value</h2>
+		<p><br><input id="id13" size="10"><br><br>
+		<button onclick="floor()">CHECK</button><br><br></p>
+		<h2 id="id14"></h2></td>
+		<td><h2>Round Value</h2>
+		<p><br><input id="id11" size="10"><br><br>
+		<button onclick="round()">CHECK</button><br><br></p>
+		<h2 id="id12"></h2></td>
+		<td><h2>Exp Value</h2>
+		<p><br><input id="id15" size="10"><br><br>
+		<button onclick="exp()">CHECK</button><br><br></p>
+		<h2 id="id16"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>Power Value</h2>
+		<p><br><input id="id19" size="5"> <input id="id20" size="5"><br><br>
+		<button onclick="pow()">CHECK</button><br><br></p>
+		<h2 id="id21"></h2></td>
+		<td><h2>ACOS Value</h2>
+		<p><br><input id="id22" size="10"><br><br>
+		<button onclick="acos()">CHECK</button><br><br></p>
+		<h2 id="id23"></h2></td>
+		<td><h2>ACOSH Value</h2>
+		<p><br><input id="id24" size="10"><br><br>
+		<button onclick="acosh()">CHECK</button><br><br></p>
+		<h2 id="id25"></h2></td>
+		</tr>
+
+		<tr>
+		<td><h2>COS Value</h2>
+		<p><br><input id="id26" size="10"><br><br>
+		<button onclick="cos()">CHECK</button><br><br></p>
+		<h2 id="id27"></h2></td>
+		<td><h2>COSH Value</h2>
+		<p><br><input id="id28" size="10"><br><br>
+		<button onclick="cosh()">CHECK</button><br><br></p>
+		<h2 id="id29"></h2></td>
+		<td><h2>ASIN Value</h2>
+		<p><br><input id="id30" size="10"><br><br>
+		<button onclick="asin()">CHECK</button><br><br></p>
+		<h2 id="id31"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>ASINH Value</h2>
+		<p><br><input id="id32" size="10"><br><br>
+		<button onclick="asinh()">CHECK</button><br><br></p>
+		<h2 id="id33"></h2></td>
+		<td><h2>SIN Value</h2>
+		<p><br><input id="id34" size="10"><br><br>
+		<button onclick="sin()">CHECK</button><br><br></p>
+		<h2 id="id35"></h2></td>
+		<td><h2>SINH Value</h2>
+		<p><br><input id="id36" size="10"><br><br>
+		<button onclick="sinh()">CHECK</button><br><br></p>
+		<h2 id="id37"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>ATAN Value</h2>
+		<p><br><input id="id38" size="10"><br><br>
+		<button onclick="atan()">CHECK</button><br><br></p>
+		<h2 id="id39"></h2></td>
+		<td><h2>ATANH Value</h2>
+		<p><br><input id="id40" size="10"><br><br>
+		<button onclick="atanh()">CHECK</button><br><br></p>
+		<h2 id="id41"></h2></td>
+		<td><h2>TAN Value</h2>
+		<p><br><input id="id42" size="10"><br><br>
+		<button onclick="tan()">CHECK</button><br><br></p>
+		<h2 id="id43"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>TRUNCATE Value</h2>
+		<p><br><input id="id47" size="10"><br><br>
+		<button onclick="trunc()">CHECK</button><br><br></p>
+		<h2 id="id48"></h2></td>
+		<td><h2>Random Value</h2>
+		<button onclick="random()">CHECK</button><br><br></p>
+		<h2 id="id49"></h2></td>
+		<td><h2>ATAN2 Value</h2>
+		<p><br><input id="id44" size="5"> <input id="id45" size="5"><br><br>
+		<button onclick="atan2()">CHECK</button><br><br></p>
+		<h2 id="id46"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>SQRT1_2</h2>
+		<button onclick="SQRT1_2()">CHECK</button><br><br></p>
+		<h2 id="id50"></h2></td>
+		<td><h2>SQRT2 Value</h2>
+		<button onclick="SQRT2()">CHECK</button><br><br></p>
+		<h2 id="id51"></h2></td>
+		<td><h2>LOG2E Value</h2>
+		<button onclick="LOG2E()">CHECK</button><br><br></p>
+		<h2 id="id52"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>LN2 Value</h2>
+		<button onclick="LN2()">CHECK</button><br><br></p>
+		<h2 id="id54"></h2></td>
+		<td><h2>LN10 Value</h2>
+		<button onclick="LN10()">CHECK</button><br><br></p>
+		<h2 id="id55"></h2></td>
+		<td><h2>LOG10E Value</h2>
+		<button onclick="LOG10E()">CHECK</button><br><br></p>
+		<h2 id="id53"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>E Value</h2>
+		<button onclick="E()">CHECK</button><br><br></p>
+		<h2 id="id56"></h2></td>
+		<td><h2>PI Value</h2>
+		<button onclick="PI()">CHECK</button><br><br></p>
+		<h2 id="id57"></h2></td>
+		<td><h2>Palindrome number</h2>
+		<p><br><input id="id58" size="10"><br><br>
+		<button onclick="palindrome()">CHECK</button><br><br></p>
+		<h2 id="id59"></h2></td>
+		</tr>
+		<tr>
+		<td><h2>Armstrong</h2>
+		<p><br><input id="id60" size="10"><br><br>
+		<button onclick="armstrong()">CHECK</button><br><br></p>
+		<h2 id="id61"></h2>
+		</td>
+		<td><h2>Prime</h2>
+		<p><br><input id="id62" size="10"><br><br>
+		<button onclick="prime()">CHECK</button><br><br></p>
+		<h2 id="id63"></h2>
+		</td>
+		<td><h2>Composite</h2>
+		<p><br><input id="id64" size="10"><br><br>
+		<button onclick="composite()">CHECK</button><br><br></p>
+		<h2 id="id65"></h2>
+		</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>
